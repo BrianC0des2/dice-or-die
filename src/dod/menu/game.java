@@ -49,6 +49,9 @@ public class game extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         topPanel = new javax.swing.JLabel();
         bottomPanel = new javax.swing.JLabel();
+        p1AVATAR = new javax.swing.JLabel();
+        p2AVATAR = new javax.swing.JLabel();
+        boardPLACEHOLDER = new javax.swing.JLabel();
         bg = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -133,6 +136,15 @@ public class game extends javax.swing.JFrame {
         bottomPanel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dod/menu/assets/scroll-bot-part.png"))); // NOI18N
         jPanel1.add(bottomPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 230, 330, -1));
 
+        p1AVATAR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dod/menu/assets/player1__1_-removebg-preview.png"))); // NOI18N
+        jPanel1.add(p1AVATAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 460, 50, -1));
+
+        p2AVATAR.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dod/menu/assets/player2__1_-removebg-preview.png"))); // NOI18N
+        jPanel1.add(p2AVATAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 460, -1, -1));
+
+        boardPLACEHOLDER.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dod/menu/assets/board_placeholder-removebg-preview.png"))); // NOI18N
+        jPanel1.add(boardPLACEHOLDER, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 60, -1, -1));
+
         bg.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/dod/menu/assets/dungeon bg.jpg"))); // NOI18N
         bg.setEnabled(false);
         jPanel1.add(bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, 0, 1000, -1));
@@ -175,6 +187,7 @@ public class game extends javax.swing.JFrame {
     private javax.swing.JLabel P1;
     private javax.swing.JLabel P2;
     private javax.swing.JLabel bg;
+    private javax.swing.JLabel boardPLACEHOLDER;
     private javax.swing.JLabel bottomPanel;
     private javax.swing.JLabel diceFACE;
     private javax.swing.JLabel hp1P1;
@@ -192,6 +205,8 @@ public class game extends javax.swing.JFrame {
     private javax.swing.JLabel movesLeft1;
     private javax.swing.JTextField movesTextArea;
     private javax.swing.JTextField movesTextArea1;
+    private javax.swing.JLabel p1AVATAR;
+    private javax.swing.JLabel p2AVATAR;
     private javax.swing.JLabel roll;
     private javax.swing.JLabel topPanel;
     // End of variables declaration//GEN-END:variables
