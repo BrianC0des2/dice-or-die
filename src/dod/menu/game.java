@@ -103,7 +103,7 @@ public class game extends javax.swing.JFrame {
         moveFEED.setText("Player [1] moves [2] tiles!\n...\nPlayer [2] falls back [3] tiles!\n....\nPlayer [1] moves [2] tiles!\n... But...\nPlayer [1] fell into a lava tile!");
         jScrollPane1.setViewportView(moveFEED);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 200, -1, 120));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 200, 220, 120));
 
         movesLeft.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         movesLeft.setForeground(new java.awt.Color(0, 0, 0));
