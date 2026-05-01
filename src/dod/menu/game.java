@@ -29,6 +29,23 @@ public class game extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        P1 = new javax.swing.JLabel();
+        P2 = new javax.swing.JLabel();
+        hp2P1 = new javax.swing.JLabel();
+        hp1P1 = new javax.swing.JLabel();
+        hpP1 = new javax.swing.JLabel();
+        hp3P2 = new javax.swing.JLabel();
+        hp4P2 = new javax.swing.JLabel();
+        hp5P2 = new javax.swing.JLabel();
+        movesLeft1 = new javax.swing.JLabel();
+        movesTextArea1 = new javax.swing.JTextField();
+        moveFeedback = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        moveFEED = new javax.swing.JTextArea();
+        movesLeft = new javax.swing.JLabel();
+        movesTextArea = new javax.swing.JTextField();
+        diceFACE = new javax.swing.JLabel();
+        roll = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         topPanel = new javax.swing.JLabel();
         bottomPanel = new javax.swing.JLabel();
@@ -40,16 +57,81 @@ public class game extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        P1.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        P1.setForeground(new java.awt.Color(255, 255, 255));
+        P1.setText("PLAYER 1:");
+        jPanel1.add(P1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 10, -1, -1));
+
+        P2.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        P2.setForeground(new java.awt.Color(255, 255, 255));
+        P2.setText("PLAYER 2:");
+        jPanel1.add(P2, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 10, -1, -1));
+
+        hp2P1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dod/menu/assets/heart-removebg-preview__2_-removebg-preview.png"))); // NOI18N
+        jPanel1.add(hp2P1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 10, -1, -1));
+
+        hp1P1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dod/menu/assets/heart-removebg-preview__2_-removebg-preview.png"))); // NOI18N
+        jPanel1.add(hp1P1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 10, 80, -1));
+
+        hpP1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dod/menu/assets/heart-removebg-preview__2_-removebg-preview.png"))); // NOI18N
+        jPanel1.add(hpP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 10, -1, -1));
+
+        hp3P2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dod/menu/assets/heart-removebg-preview__2_-removebg-preview.png"))); // NOI18N
+        jPanel1.add(hp3P2, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 10, -1, -1));
+
+        hp4P2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dod/menu/assets/heart-removebg-preview__2_-removebg-preview.png"))); // NOI18N
+        jPanel1.add(hp4P2, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 10, -1, -1));
+
+        hp5P2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dod/menu/assets/heart-removebg-preview__2_-removebg-preview.png"))); // NOI18N
+        jPanel1.add(hp5P2, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 10, 80, -1));
+
+        movesLeft1.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        movesLeft1.setForeground(new java.awt.Color(0, 0, 0));
+        movesLeft1.setText("Player 2 Moves Left:");
+        jPanel1.add(movesLeft1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 130, -1, 20));
+
+        movesTextArea1.setText("[ X Moves Left]");
+        jPanel1.add(movesTextArea1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 150, -1, -1));
+
+        moveFeedback.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        moveFeedback.setForeground(new java.awt.Color(0, 0, 0));
+        moveFeedback.setText("Moves Feedback :");
+        jPanel1.add(moveFeedback, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 180, -1, -1));
+
+        moveFEED.setColumns(20);
+        moveFEED.setRows(5);
+        moveFEED.setText("Player [1] moves [2] tiles!\n...\nPlayer [2] falls back [3] tiles!\n....\nPlayer [1] moves [2] tiles!\n... But...\nPlayer [1] fell into a lava tile!");
+        jScrollPane1.setViewportView(moveFEED);
+
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 200, -1, 120));
+
+        movesLeft.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        movesLeft.setForeground(new java.awt.Color(0, 0, 0));
+        movesLeft.setText("Player 1 Moves Left:");
+        jPanel1.add(movesLeft, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 80, -1, 20));
+
+        movesTextArea.setText("[ X Moves Left]");
+        jPanel1.add(movesTextArea, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 100, -1, -1));
+
+        diceFACE.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dod/menu/assets/diceFaces/four.png"))); // NOI18N
+        jPanel1.add(diceFACE, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 310, -1, -1));
+
+        roll.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
+        roll.setForeground(new java.awt.Color(0, 0, 0));
+        roll.setText("Roll");
+        jPanel1.add(roll, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 460, -1, -1));
+
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dod/menu/assets/button-removebg-preview (1).png"))); // NOI18N
         jButton1.setBorderPainted(false);
         jButton1.setContentAreaFilled(false);
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 440, -1, -1));
+        jButton1.addActionListener(this::jButton1ActionPerformed);
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 450, -1, 40));
 
         topPanel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dod/menu/assets/scroll-top-part.png"))); // NOI18N
-        jPanel1.add(topPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 330, 300));
+        jPanel1.add(topPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 10, 330, 300));
 
         bottomPanel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dod/menu/assets/scroll-bot-part.png"))); // NOI18N
-        jPanel1.add(bottomPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 330, -1));
+        jPanel1.add(bottomPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 230, 330, -1));
 
         bg.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/dod/menu/assets/dungeon bg.jpg"))); // NOI18N
         bg.setEnabled(false);
@@ -59,6 +141,10 @@ public class game extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -86,10 +172,27 @@ public class game extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel P1;
+    private javax.swing.JLabel P2;
     private javax.swing.JLabel bg;
     private javax.swing.JLabel bottomPanel;
+    private javax.swing.JLabel diceFACE;
+    private javax.swing.JLabel hp1P1;
+    private javax.swing.JLabel hp2P1;
+    private javax.swing.JLabel hp3P2;
+    private javax.swing.JLabel hp4P2;
+    private javax.swing.JLabel hp5P2;
+    private javax.swing.JLabel hpP1;
     private javax.swing.JButton jButton1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea moveFEED;
+    private javax.swing.JLabel moveFeedback;
+    private javax.swing.JLabel movesLeft;
+    private javax.swing.JLabel movesLeft1;
+    private javax.swing.JTextField movesTextArea;
+    private javax.swing.JTextField movesTextArea1;
+    private javax.swing.JLabel roll;
     private javax.swing.JLabel topPanel;
     // End of variables declaration//GEN-END:variables
 }
