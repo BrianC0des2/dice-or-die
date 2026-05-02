@@ -45,6 +45,6 @@ wins regardless of board position.
 10. The board layout is randomized at the start of every game
 
 ## Screenshots
-<img width="1920" height="1080" alt="game" src="https://github.com/user-attachments/assets/7aed2c62-fa90-4300-b80d-0e6be2c0ef4c" />
-<img width="1920" height="1080" alt="main-menu" src="https://github.com/user-attachments/assets/0bb388fd-6f1a-469c-868c-d7a1c0b080ed" />
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/76fdcc82-5265-4e4f-b07c-f1358029710f" />
+<img width="1168" height="770" alt="main-menu" src="https://github.com/user-attachments/assets/074958f2-7360-4a5c-a7b6-0bfced89d2e2" />
+<img width="1168" height="770" alt="tutorial" src="https://github.com/user-attachments/assets/452714cf-6c96-4716-b00a-f235dece402d" />
+<img width="1168" height="770" alt="game" src="https://github.com/user-attachments/assets/61c0cde8-6535-427a-8f55-0e46dd78c5eb" />
