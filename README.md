@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="main-menu" src="https://github.com/user-attachments/assets/fc142110-e6e6-4ec4-bc84-14883408d66b" /># Dice or Die
+<img width="1168" height="770" alt="game" src="https://github.com/user-attachments/assets/61c0cde8-6535-427a-8f55-0e46dd78c5eb" /># Dice or Die
 A 2-player board game built in Java with a graphical user interface.
 
 ## Team Members
