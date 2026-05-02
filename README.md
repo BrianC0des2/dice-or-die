@@ -47,3 +47,4 @@ wins regardless of board position.
 ## Screenshots
 <img width="1920" height="1080" alt="game" src="https://github.com/user-attachments/assets/7aed2c62-fa90-4300-b80d-0e6be2c0ef4c" />
 <img width="1920" height="1080" alt="main-menu" src="https://github.com/user-attachments/assets/0bb388fd-6f1a-469c-868c-d7a1c0b080ed" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/76fdcc82-5265-4e4f-b07c-f1358029710f" />
