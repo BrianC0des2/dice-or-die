@@ -1,4 +1,4 @@
-# Dice or Die
+<img width="1920" height="1080" alt="main-menu" src="https://github.com/user-attachments/assets/fc142110-e6e6-4ec4-bc84-14883408d66b" /># Dice or Die
 A 2-player board game built in Java with a graphical user interface.
 
 ## Team Members
@@ -45,3 +45,5 @@ wins regardless of board position.
 10. The board layout is randomized at the start of every game
 
 ## Screenshots
+<img width="1920" height="1080" alt="game" src="https://github.com/user-attachments/assets/7aed2c62-fa90-4300-b80d-0e6be2c0ef4c" />
+<img width="1920" height="1080" alt="main-menu" src="https://github.com/user-attachments/assets/0bb388fd-6f1a-469c-868c-d7a1c0b080ed" />
