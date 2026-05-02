@@ -3,7 +3,7 @@ A 2-player board game built in Java with a graphical user interface.
 
 ## Team Members
 - Bryan P. Saavedra
-- Landis Angelo J. Landis
+- Landis Angelo J. Tarro
 - Datu Johari I. Esmail
 
 ## Description
